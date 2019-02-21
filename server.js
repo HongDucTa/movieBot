@@ -15,5 +15,5 @@ server.listen(PORT, () => console.log('The bot server is running on port ' + POR
 */
 
 let u = new FBeamer(fb);
-server.get('/', (req,res) => {u.registerHook(req,res);});
+server.get('/', (req,res) => u.registerHook(req,res));
 server.listen(PORT,() => console.log('Ok'));
